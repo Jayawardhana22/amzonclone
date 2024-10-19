@@ -3,7 +3,9 @@ import "./Header.css";
 import SearchIcon from '@mui/icons-material/Search';
 import { Link } from 'react-router-dom';
 import { ShoppingBasket } from '@mui/icons-material';
-import { Zoom } from '@mui/material';
+
+
+
 
 
 
@@ -12,6 +14,7 @@ function Header() {
       <img className='header__logo' src="/amazon-logo.png"
       alt='Amazon logo'
       />
+
       <Link to="/">
       {/*search box */}
       <div className='header__search'>
@@ -53,9 +56,9 @@ function Header() {
              <Link to={"/checkout"} className='header__link'>
             <div className='header__optionBasket'>
               {/* shopping basket Icon */}
-              <ShoppingBasketIco/>
+              <ShoppingBasket/>
               {/* Number of items in the basket*/ }
-              <span>0</span>
+              <span className='header__optionLineTwo header__basketCount'>0</span>
               </div>
               </Link>
              

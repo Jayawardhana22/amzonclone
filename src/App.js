@@ -7,33 +7,17 @@ function App() {
   return (
     <Router>
       <div className="app">
+        {/* The Header will appear on every page */}
+        <Header />
         <Routes>
-          <Route 
-            path="/checkout" 
-            element={
-              <div>
-                <h1>Checkout</h1>
-              </div>
-            } 
-          />
-          <Route 
-            path="/login" 
-            element={
-              <div>
-                <h1>Login Page</h1>
-              </div>
-            } 
-          />
-          {/* This is the default route */}
-          <Route 
-            path="/" 
-            element={
-              <div>
-                <Header />
-                <h1>HOME PAGE!!!</h1>
-              </div>
-            } 
-          />
+          {/* Route for checkout page */}
+          <Route path="/checkout" element={<h1>Checkout</h1>} />
+
+          {/* Route for login page */}
+          <Route path="/login" element={<h1>Login Page</h1>} />
+
+          {/* Default route (home page) */}
+          <Route path="/" element={<h1>HOME PAGE!!!</h1>} />
         </Routes>
       </div>
     </Router>
