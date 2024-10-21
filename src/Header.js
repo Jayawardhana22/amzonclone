@@ -11,17 +11,19 @@ import { ShoppingBasket } from '@mui/icons-material';
 
 function Header() {
   return  <nav className="header">
+    {/*logo on the */}
+    <Link to="/">
       <img className='header__logo' src="/amazon-logo.png"
       alt='Amazon logo'
       />
-
-      <Link to="/">
+</Link>
+  
       {/*search box */}
-      <div className='header__search'>
+      <div className="header__search">
       <input type='text' className='header__searchInput'/>
       <SearchIcon className="header__searchIcon"/>
       </div>
-      </Link>
+   
 
       {/* 3 Links*/}
       <div className='header__nav'>
