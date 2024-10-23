@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import "./Home.css";
 
 function Home() {
   return (
-    <div>
-        <h1>I am the home page </h1>
+    <div className='home'>
+        <img 
+        className='home__image'
+        src='/amzonhomebackground.jpg'
+        alt=''></img>
+        
     </div>
   )
 }
