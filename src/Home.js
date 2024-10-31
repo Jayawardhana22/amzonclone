@@ -14,24 +14,25 @@ function Home() {
      < div className='home_row'>
       <Product 
         id="12321341"
-        title="Sample Product" 
-        price={11.96}
-        rating={5}
-        image="/product1.jpg" 
+        title="Wireless Bluetooth Headset
+High-quality sound, noise cancellation." 
+        price={35}
+        rating={4}
+        image="https://m.media-amazon.com/images/I/712fHsfyIFL._AC_SY355_.jpg" 
       />
       <Product 
-        id="12321341"
-        title="Sample Product" 
-        price={11.96}
+        id="12321342"
+        title="Fujifilm X-H2s Mirrorlesss camera" 
+        price={2499}
         rating={5}
-        image="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=400" 
+        image="https://m.media-amazon.com/images/I/71z7B11WBlL._AC_UL480_FMwebp_QL65_.jpg" 
       />
       
       </div>
       <div className='home_row'>
       <Product 
-        id="12321341"
-        title="Sample Product" 
+        id="12321343"
+        title="Smart watch for men/Women" 
         price={11.96}
         rating={5}
         image="https://suhadha.lk/wp-content/uploads/2024/02/PRODUCT_169668163467.jpg.webp" 
