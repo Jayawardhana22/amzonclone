@@ -33,21 +33,21 @@ High-quality sound, noise cancellation."
       <Product 
         id="12321343"
         title="Smart watch for men/Women" 
-        price={11.96}
+        price={35}
         rating={5}
         image="https://suhadha.lk/wp-content/uploads/2024/02/PRODUCT_169668163467.jpg.webp" 
       />
       <Product 
-        id="12321341"
-        title="Sample Product" 
+        id="12321344"
+        title="JBL party Box. " 
         price={11.96}
         rating={5}
         image="https://www.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw58d8f63b/1_JBL_PARTYBOX_710_HERO_0031_x8.png?sw=535&sh=535" 
       />
       <Product 
-        id="12321341"
-        title="Sample Product" 
-        price={11.96}
+        id="12321345"
+        title="I pad" 
+        price={115}
         rating={5}
         image="https://m.media-amazon.com/images/I/517D9rSAztL.jpg" 
       />
@@ -55,9 +55,9 @@ High-quality sound, noise cancellation."
       </div>
       <div className='home_row'>
       <Product 
-        id="12321341"
-        title="Sample Product" 
-        price={11.96}
+        id="12321346"
+        title="Smart Moniter" 
+        price={3000}
         rating={5}
         image="https://m.media-amazon.com/images/I/61HQByMUOJL.jpg" 
       />
