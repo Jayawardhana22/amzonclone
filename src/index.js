@@ -4,20 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { StateProvider } from './StateProvider';
-import reducer, {initialState} from './reducer';
-
-const initialState = {
-  user: null, // Add any initial state properties you need
-};
-
-const reducer = (state, action) => {
-  switch (action.type) {
-    case "SET_USER":
-      return { ...state, user: action.payload };
-    default:
-      return state;
-  }
-};
+import reducer, { initialState } from './reducer';
 
 const root = createRoot(document.getElementById('root'));
 root.render(

@@ -8,17 +8,18 @@ import { useStateValue } from './StateProvider';
 function Header() {
   const [{ basket }, dispatch] = useStateValue();
 
-  const addToBasket = () => {
-    //Add item to basket
-    dispatch({
-      type:'ADD_TO_BASKET',
-      item: {
-        id:id,
-        titele:title,
-        image : image,
-        price: price,
-        rating: rating,
+  console.log(basket);
 
+  const addToBasket = () => {
+    // Add item to basket
+    dispatch({
+      type: 'ADD_TO_BASKET',
+      item: {
+        id: 'sample-id',       // Replace with the actual id
+        title: 'sample-title',  // Replace with the actual title
+        image: '/path-to-image', // Replace with the actual image path
+        price: 29.99,           // Replace with the actual price
+        rating: 5               // Replace with the actual rating
       },
     });
   };
@@ -41,7 +42,7 @@ function Header() {
         {/* Link 1: Sign In */}
         <Link to="/login" className="header__link">
           <div className="header__option">
-            <span className="header__optionLineOne">Hello Qazi</span>
+            <span className="header__optionLineOne">Hello, User</span>
             <span className="header__optionLineTwo">Sign In</span>
           </div>
         </Link>
@@ -50,7 +51,7 @@ function Header() {
         <Link to="/" className="header__link">
           <div className="header__option">
             <span className="header__optionLineOne">Return</span>
-            <span className="header__optionLineTwo">& orders</span>
+            <span className="header__optionLineTwo">& Orders</span>
           </div>
         </Link>
 
@@ -67,7 +68,7 @@ function Header() {
           <div className="header__optionBasket">
             <ShoppingBasket />
             <span className="header__optionLineTwo header__basketCount">
-              {basket?.length }
+              {basket?.length}
             </span>
           </div>
         </Link>
