@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Header";  
-import Home from "./Home";      
+import Home from "./Home";   
+import Checkout from "./Checkout";   
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
           <Route path="/checkout" element={
             <>
               <Header />
-              <h1>Checkout</h1>
+           <Checkout/>
             </>
           } />
 
