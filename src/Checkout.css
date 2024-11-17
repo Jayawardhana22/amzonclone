@@ -1,5 +1,12 @@
 .checkout_ad {
-    width: 100px;
+    width: 100%; /* Stretch to full page width, or adjust to your preference */
+    height: 30vh; /* Full page height (viewport height) */
     margin-bottom: 10px;
-    
+    overflow: hidden; /* Ensures content doesn't spill over */
+}
+
+.checkout_ad img {
+    width: 100%; /* Maintain aspect ratio */
+    height: 50%; /* Stretch to fit height */
+    display: block; /* Prevents extra spaces below the image */
 }
