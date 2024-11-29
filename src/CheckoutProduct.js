@@ -1,12 +1,12 @@
 import React from 'react'
 import './CheckoutProduct.css';
-import { useStateValue0 } from './StateProvider';
-import { type } from '@testing-library/user-event/dist/type';
+import { useStateValue } from './StateProvider';
+
 
 function CheckoutProduct({id,title,image,price,rating}) {
   const [{ basket },dispatch] = useStateValue();
 
-  
+  console.log(id,title,image,price,rating);
   
   const removeFromBasket = () =>{
     dispatch({
